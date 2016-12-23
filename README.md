@@ -1,5 +1,6 @@
 # SpatialCompetitionGrocery
 Estimation of the Demand Model for Spatial Competiton of Grocery Chains
+
 (1) data=CsvToMat(FileNameStructuresStata,FileNameStructuresMatlab) - function that takes Stata produced csv file FileNameStructuresStata and transforms it into matrix data which is saved into mat file FileNameStructuresMatlab   
 
 (2) [ts,storeRevenue]=setupMatlabStructsClub(data,DemandStructsName,year) - function that take data matrix produced by CsvToMat and transform it into structure ts and vector of stores' revenues storeRevenue which are saved to mat file DemandStructsName, year is number which is used for normalization of variables (different years have dfifferent mean income which affects normalization)
